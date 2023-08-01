@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uthman Bashir Dantata</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <nav class="w-full fixed max-w-[100vw] z-[99] bg-[#002017] h-[70px] px-20 py-2 flex flex-row justify-start items-center gap-x-8">
+      <a href="#hero" class="text-white font-bold">Home</a>
+      <a href="#about-me" class="text-white font-bold">About Me</a>
+      <a href="#my-projects" class="text-white font-bold">My Projects</a>
+      <a href="#testimonials" class="text-white font-bold">Testimonials</a>
+      <a href="#contact-me" class="text-white font-bold">Contact Me</a>
+    </nav>
+
+    <div id="hero" class="container w-full max-w-[100vw] min-h-full h-screen p-20 bg-green-800 flex flex-col justify-center items-center gap-4">
+      <h1 class="text-2xl text-center text-white font-bold">Uthman Bashir Dantata</h1>
+      <h2 class="text-md text-center text-white font-semibold">Software Developer</h2>
+      <div class="flex flex-row gap-4">
+        <a href="https://github.com/uthmandantata">
+          <ion-icon name="logo-github" class="bg-white p-2 rounded-full shadow-lg shadow-green-700"></ion-icon>
+        </a>
+        <a href="https://twitter.com/uthman_dantata">
+          <ion-icon name="logo-twitter" class="bg-white p-2 rounded-full shadow-lg shadow-green-700"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div id="about-me" class="container w-full max-w-[100vw] min-h-full h-screen p-20 bg-green-900 flex flex-col justify-center items-center gap-4">
+      <h1 class="text-2xl text-center text-white font-bold">About Me</h1>
+
+      <div class="h-[200px] w-[200px] rounded-full bg-slate-700">
+        <img src="./img/uthman.jpg" class="h-[200px] w-[200px] rounded-full" alt="" srcset="" />
+      </div>
+      <p class="text-white">
+        I'm a passionate software developer with expertise in CSS, HTML, Tailwind CSS, Python, and Django. I take great pride in crafting elegant and efficient solutions to
+        real-world problems. Let me introduce you to my skills and experience in the field of web development.
+      </p>
+    </div>
+
+    <div id="my-projects" class="container w-full max-w-[100vw] p-20 bg-green-800 flex flex-col gap-8">
+      <h3 class="text-white text-2xl py-4 text-center font-bold">My Projects</h3>
+      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4">
+        <div class="col-span-1 w-full pb-10 rounded-[20px] bg-green-900">
+          <p class="title text-white px-10 py-4 font-bold">Automtion System</p>
+        </div>
+        <div class="col-span-1 w-full pb-10 rounded-[20px] bg-green-900">
+          <p class="title text-white px-10 py-4 font-bold">Membership App</p>
+        </div>
+        <div class="col-span-1 w-full pb-10 rounded-[20px] bg-green-900">
+          <p class="title text-white px-10 py-4 font-bold">Ecommerce Website</p>
+        </div>
+        <div class="col-span-1 w-full pb-10 rounded-[20px] bg-green-900">
+          <p class="title text-white px-10 py-4 font-bold">Foundation Website</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonials" class="container w-full max-w-[100vw] p-20 bg-green-900 flex flex-col gap-8">
+      <h3 class="text-white text-2xl py-4 text-center font-bold">Testimonials</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4">
+        <div class="col-span-2 w-full p-10 rounded-[20px] bg-green-800">
+          <p class="italic text-white">
+            <span class="text-2xl font-extrabold">"</span>
+            Uthman's commitment to open-source contributions is commendable. His willingness to give back to the community and collaborate with other developers showcases his
+            passion for the growth of the tech industry. He is truly a developer who cares about making a positive impact.
+          </p>
+          <p class="font-bold text-white text-center pt-4">Lisa Chen, Open-Source Advocate</p>
+        </div>
+        <div class="col-span-2 w-full p-10 rounded-[20px] bg-green-800">
+          <p class="italic text-white">
+            <span class="text-2xl font-extrabold">"</span>
+            Having Uthman on our development team was a game-changer. His strong problem-solving skills and ability to communicate technical concepts to non-technical stakeholders
+            were invaluable. He was always willing to lend a helping hand and contributed greatly to the success of our projects
+          </p>
+          <p class="font-bold text-white text-center pt-4">Mark Thompson, Team Lead</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-4 bg-green-900">
+      <div class="max-w-md mx-auto bg-green-900 rounded p-8">
+        <h2 class="text-2xl text-white font-bold mb-6">Contact Us</h2>
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block text-white text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" required />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-white text-sm font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" required />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-white text-sm font-bold mb-2">Message</label>
+            <textarea id="message" name="message" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" rows="4" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-green-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="bg-[#002017] text-white text-center py-4">
+      <p>&copy; 2023 Uthman Bashir Dantata. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
